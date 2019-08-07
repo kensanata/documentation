@@ -630,13 +630,7 @@ Returns an empty object.
 
 #### Dismissing a single notification:
 
-    POST /api/v1/notifications/dismiss
-    
-Form data:
-
-| Field | Description                   | Optional   |
-| ----- | ----------------------------  | ---------- |
-| `id`  | Notification ID | no         |    
+    POST /api/v1/notifications/:id/dismiss
 
 Deletes a single notification from the Mastodon server for the authenticated user.
 Returns an empty object.
